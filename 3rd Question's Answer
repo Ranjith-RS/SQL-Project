@@ -1,0 +1,24 @@
+with cte as
+(
+select
+       c.continent_name,
+       m.country_code,
+       country_name,
+       gdp_per_capita ,
+       year
+from country.continent as c 
+join country.continent_map as m on c.continent_code=m.continent_code
+join country.country as co on m.country_code=CO.COUNTRY_CODE
+JOIN country.percapita as p on co.country_code=p.country_code
+) ,
+final as (
+select 
+       rank() over (partition by continent_name order by avg(gdp_per_capita) desc) as rank,
+       continent_name,
+       country_code,
+       country_name,
+       ROUND(avg(gdp_per_capita),2) as country_capita
+from cte 
+group by continent_name,country_code,country_name
+)
+select * from final where rank=1
