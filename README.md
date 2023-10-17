@@ -7,3 +7,5 @@ rank	continent_name	country_code	country_name	avg_gdp_per_capita
 1	North America	BMU	Bermuda	$83,788.48
 1	Oceania	AUS	Australia	$47,070.39
 1	South America	CHL	Chile	$10,781.71
+
+![alt text](image.jpg)
