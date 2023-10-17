@@ -8,4 +8,4 @@ rank	continent_name	country_code	country_name	avg_gdp_per_capita
 1	Oceania	AUS	Australia	$47,070.39
 1	South America	CHL	Chile	$10,781.71
 
-![alt_text](C:\Users\Admin\OneDrive\Pictures\Screenshots\Screenshot (3218).jpg)
+![alt_text](https://github.com/Ranjith-RS/Data/blob/main/Screenshot%20(3218).png)
